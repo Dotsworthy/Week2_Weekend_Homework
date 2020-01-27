@@ -40,4 +40,8 @@ class Room
     @guests.length
   end
 
+  def play_song(song)
+    song_found = {|song| @songs.song_name == song }
+    return "Playing #{song_found}"
+  end
 end
