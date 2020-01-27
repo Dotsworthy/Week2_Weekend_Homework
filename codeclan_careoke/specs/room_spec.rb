@@ -79,7 +79,4 @@ class TestRooms < MiniTest::Test
   def test_play_song
     assert_equal("Playing Like a Virgin", @room1.play_song(@song1))
   end
-
-  # def test_guests_favourite_song_is_playing
-  # end
 end
