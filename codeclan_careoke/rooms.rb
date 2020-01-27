@@ -41,7 +41,7 @@ class Room
   end
 
   def play_song(song)
-    song_found = {|song| @songs.song_name == song }
+    song_found.find {|song| @songs.song_name == song }
     return "Playing #{song_found}"
   end
 end
